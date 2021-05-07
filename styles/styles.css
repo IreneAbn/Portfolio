@@ -1,21 +1,21 @@
 @font-face {
   font-family: "OpenSans-Bold";
-  src: local("OpenSans-Bold"), url("/types/Open_Sans/OpenSans-Bold.ttf");
+  src: local("OpenSans-Bold"), url("types/Open_Sans/OpenSans-Bold.ttf");
 }
 @font-face {
   font-family: "Montserrat-SemiBold";
   src: local("Montserrat-SemiBold"),
-    url("/types/Montserrat/Montserrat-SemiBold.ttf");
+    url("types/Montserrat/Montserrat-SemiBold.ttf");
 }
 @font-face {
   font-family: "Montserrat-Medium";
   src: local("Montserrat-Medium"),
-    url("/types/Montserrat/Montserrat-Medium.ttf");
+    url("types/Montserrat/Montserrat-Medium.ttf");
 }
 @font-face {
   font-family: "Montserrat-Regular";
   src: local("Montserrat-Regular"),
-    url("/types/Montserrat/Montserrat-Regular.ttf");
+    url("types/Montserrat/Montserrat-Regular.ttf");
 }
 
 /* ---------HEADER-------- */
@@ -271,7 +271,7 @@ footer p{
 }
 
 .about-me .me-text p {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-Regular", sans-serif;
   font-size: 17px;
   padding-bottom: 20px;
 }
