@@ -1,6 +1,7 @@
 @font-face {
   font-family: "OpenSans-Bold";
-  src: local("OpenSans-Bold"), url("types/Open_Sans/OpenSans-Bold.ttf");
+  src: local("OpenSans-Bold"),
+    url("types/Open_Sans/OpenSans-Bold.ttf");
 }
 @font-face {
   font-family: "Montserrat-SemiBold";
@@ -16,6 +17,10 @@
   font-family: "Montserrat-Regular";
   src: local("Montserrat-Regular"),
     url("types/Montserrat/Montserrat-Regular.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* ---------HEADER-------- */
@@ -48,7 +53,6 @@ nav a {
 }
 .iniciales {
   font-size: 20px;
-  font-weight: 600;
 }
 
 
@@ -192,22 +196,22 @@ main {
 
 footer {
     width: 100vw;
-    height: 280px;
+    height: 400px;
 }
 
 .lets-connect {
     width: 100vw;
     margin: 0 auto;
     text-align: center;
-    padding-top: 32px;
+    padding-top: 40px;
     padding-bottom: 60px;
 }
-footer h2{
+footer h2 {
     font-family: "Montserrat-SemiBold", sans-serif;
     font-size: 24px;
     padding-bottom: 10px;
 }
-footer p{
+footer p {
     font-family: "Montserrat-Regular", sans-serif;
     font-size: 18px;
 }
