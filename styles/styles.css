@@ -1,22 +1,22 @@
 @font-face {
-  font-family: "OpenSans-Bold";
-  src: local("OpenSans-Bold"),
-    url("types/Open_Sans/OpenSans-Bold.ttf");
+  font-family: "Aeonik-Bold";
+  src: local("Aeonik-Bold"),
+    url("types/Aeonik/Aeonik-Bold.otf");
 }
 @font-face {
-  font-family: "Montserrat-SemiBold";
-  src: local("Montserrat-SemiBold"),
-    url("types/Montserrat/Montserrat-SemiBold.ttf");
+  font-family: "Aeonik-Light";
+  src: local("Aeonik-Light"),
+    url("types/Aeonik/Aeonik-Light.ttf");
 }
 @font-face {
-  font-family: "Montserrat-Medium";
-  src: local("Montserrat-Medium"),
-    url("types/Montserrat/Montserrat-Medium.ttf");
+  font-family: "Aeonik-Medium";
+  src: local("Aeonik-Medium"),
+    url("types/Aeonik/Aeonik-Medium.otf");
 }
 @font-face {
-  font-family: "Montserrat-Regular";
-  src: local("Montserrat-Regular"),
-    url("types/Montserrat/Montserrat-Regular.ttf");
+  font-family: "Aeonik-Regular";
+  src: local("Aeonik-Regular"),
+    url("types/Aeonik/Aeonik-Regular.otf.ttf");
 }
 
 html {
@@ -31,7 +31,7 @@ header {
   /* background-color: #fdfdfd; */
 }
 header div {
-  font-family: "Montserrat-Medium", sans-serif;
+  font-family: "Aeonik-Medium", sans-serif;
   font-size: 18px;
   width: 85vw;
   max-width: 1280px;
@@ -52,9 +52,16 @@ nav a {
   margin-right: 48px;
 }
 .iniciales {
-  font-size: 20px;
+  font-size: 18px;
+  font-family: "Aeonik-Regular", sans-serif;
+  border-bottom: solid white 3px;
 }
-
+header .iniciales:hover {
+  border-bottom: solid 3px;
+}
+header .iniciales .selected{
+  border-bottom: solid 3px;
+}
 
 header nav a {
   border-bottom: solid white 3px;
@@ -82,17 +89,17 @@ main {
   margin: 0 auto;
   text-align: center;
   padding-top: 120px;
-  margin-bottom: 220px;
+  margin-bottom: 180px;
 }
 #home{
-  font-family: "OpenSans-Bold", sans-serif;
-  font-size: 48px;
+  font-family: "Aeonik-Bold", sans-serif;
+  font-size: 64px;
   color: #050505;
 }
 #subtitulo {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Aeonik-Light", sans-serif;
   font-size: 22px;
-  line-height: 120%;
+  line-height: 130%;
   padding-top: 42px;
   color: #050505;
 }
@@ -100,7 +107,7 @@ main {
   padding-top: 24px;
 }
 #subtitulo-bold {
-  font-family: "Montserrat-SemiBold", sans-serif;
+  font-family: "Aeonik-medium", sans-serif;
 }
 
 /* ---------ALL-CARDS-------- */
@@ -114,19 +121,19 @@ main {
   margin-bottom: 128px;
 }
 .titlecard {
-    font-family: "Montserrat-Medium", sans-serif;
-    font-size: 40px;
+    font-family: "Aeonik-Regular", sans-serif;
+    font-size: 44px;
     padding-top: 200px;
     padding-bottom: 56px;
 }
 .pcard {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Aeonik-Light", sans-serif;
   line-height: 200%;
-  font-size: 16px;
+  font-size: 20px;
 }
 .linkcard {
   display: flex;
-  font-family: "Montserrat-Semibold", sans-serif;
+  font-family: "Aeonik-Medium", sans-serif;
   font-size: 16px;
   padding-top: 36px;
   text-decoration: none;
@@ -165,7 +172,7 @@ main {
   padding-right: 64px;
 }
 .verticaltext-topright {
-  font-family: "Montserrat-Medium", sans-serif;
+  font-family: "Aeonik-Regular", sans-serif;
   font-size: 18px;
   writing-mode: vertical-lr;
   padding-left: 20px;
