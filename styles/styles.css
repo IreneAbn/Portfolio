@@ -6,7 +6,7 @@
 @font-face {
   font-family: "Aeonik-Light";
   src: local("Aeonik-Light"),
-    url("types/Aeonik/Aeonik-Light.ttf");
+    url("types/Aeonik/Aeonik-Light.otf");
 }
 @font-face {
   font-family: "Aeonik-Medium";
@@ -16,7 +16,7 @@
 @font-face {
   font-family: "Aeonik-Regular";
   src: local("Aeonik-Regular"),
-    url("types/Aeonik/Aeonik-Regular.otf.ttf");
+    url("types/Aeonik/Aeonik-Regular.otf");
 }
 
 html {
@@ -26,9 +26,10 @@ html {
 /* ---------HEADER-------- */
 
 header {
-  /* position: fixed; */
+  position: fixed;
   width: 100vw;
-  /* background-color: #fdfdfd; */
+  background-color: #fdfdfd;
+  z-index: 2;
 }
 header div {
   font-family: "Aeonik-Medium", sans-serif;
@@ -39,7 +40,7 @@ header div {
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 header a {
   text-decoration: none;
@@ -52,7 +53,7 @@ nav a {
   margin-right: 48px;
 }
 .iniciales {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Aeonik-Regular", sans-serif;
   border-bottom: solid white 3px;
 }
@@ -88,7 +89,7 @@ main {
   width: 630px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 160px;
   margin-bottom: 180px;
 }
 #home{
@@ -193,7 +194,7 @@ main {
   padding-left: 75px;
 }
 .verticaltext-topleft {
-  font-family: "Montserrat-Medium", sans-serif;
+  font-family: "Aeonik-Regular", sans-serif;
   font-size: 18px;
   writing-mode: vertical-lr;
   padding-right: 20px;
@@ -210,17 +211,17 @@ footer {
     width: 100vw;
     margin: 0 auto;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 80px;
 }
 footer h2 {
-    font-family: "Montserrat-SemiBold", sans-serif;
-    font-size: 24px;
-    padding-bottom: 10px;
+    font-family: "Aeonik-Medium", sans-serif;
+    font-size: 32px;
+    padding-bottom: 16px;
 }
 footer p {
-    font-family: "Montserrat-Regular", sans-serif;
-    font-size: 18px;
+    font-family: "Aeonik-Light", sans-serif;
+    font-size: 22px;
 }
 .social-links {
     display: flex;
@@ -230,7 +231,7 @@ footer p {
     margin: 0 auto;
 }
 .social-links a {
-  font-family: "Montserrat-Semibold", sans-serif;
+  font-family: "Aeonik-Regular", sans-serif;
   font-size: 14px;
   color: #050505;
   text-decoration: none;
@@ -250,8 +251,8 @@ footer p {
 .about-me {
   display: flex;
   justify-content: space-between;
-  padding-top: 90px;
-  margin-bottom: 128px;
+  padding-top: 120px;
+  margin-bottom: 100px;
 }
 .me-image{
   display: flex;
@@ -261,30 +262,22 @@ footer p {
 .me-text{
   padding-right: 110px;
   padding-left: 95px;
-  margin-top: 16px;
+  margin-top: 10px;
   width: 600px;
   line-height: 150%;
 }
 
 #about{
-  font-family: "OpenSans-Bold", sans-serif;
-  font-size: 32px;
+  font-family: "Aeonik-Medium", sans-serif;
+  font-size: 34px;
   color: #050505;
   padding-bottom: 32px;
 }
-#cv {
-  margin: 70px 0 0 0px;
-  font-family: "Montserrat-Semibold", sans-serif;
-  font-size: 18px;
-  align-items: flex-end;
-  text-decoration: none;
-  color: #050505;
-}
 
 .about-me .me-text p {
-  font-family: "Montserrat-Regular", sans-serif;
-  font-size: 17px;
-  padding-bottom: 20px;
+  font-family: "Aeonik-Light", sans-serif;
+  font-size: 18px;
+  padding-bottom: 18px;
 }
 
 /* --------- BIO SECTION -------- */
@@ -292,7 +285,7 @@ footer p {
 /* --------- EDUCATION -------- */
 
 .bio-section {
-  padding-top: 80px;
+  padding-top: 65px;
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -300,7 +293,7 @@ footer p {
 }
 
 .bio-section h2 {
-  font-family: "Montserrat-Medium", sans-serif;
+  font-family: "Aeonik-Medium", sans-serif;
   font-size: 40px;
 }
 
@@ -314,24 +307,24 @@ footer p {
 }
 
 .education-item h3 {
-  font-family: "Montserrat-Semibold", sans-serif;
+  font-family: "Aeonik-Regular", sans-serif;
   font-size: 24px;
 }
 
 .education-item .subheader {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Aeonik-Light", sans-serif;
   font-size: 22px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
 .education-item p {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Aeonik-Light", sans-serif;
   font-size: 16px;
 }
 
 #selflearn{
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Aeonik-Light", sans-serif;
   font-size: 18px;
 }
 
@@ -352,7 +345,7 @@ footer p {
 
 .bio-section .skills ul li {
   margin-bottom: 10px;
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Aeonik-Regular", sans-serif;
   font-size: 22px;
   padding-bottom: 4px;
 }
@@ -369,7 +362,7 @@ footer p {
 
 .tools-section h2 {
   text-align: center;
-  font-family: "Montserrat-Medium", sans-serif;
+  font-family: "Aeonik-Medium", sans-serif;
   font-size: 40px;
   margin-bottom: 25px;
 }
@@ -383,7 +376,7 @@ footer p {
 }
 
 .skill-set span {
-    font-family: "Montserrat-Regular", sans-serif;
+    font-family: "Aeonik-Regular", sans-serif;
     font-size: 22px;
     margin-right: 25px;
     margin-bottom: 15px;
@@ -392,13 +385,13 @@ footer p {
 /* --------- EXPERIENCE -------- */
 
 
-.previous-experience h2 {
+/* .previous-experience h2 {
   text-align: center;
-  font-family: "Montserrat-Medium", sans-serif;
+  font-family: "Aeonik-Regular", sans-serif;
   font-size: 22px;
   margin-bottom: 40px;
   color: darkgray;
-}
+} */
 
 hr {
   margin-top: 60px;
