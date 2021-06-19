@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Aeonik-Bold";
+    src: local("Aeonik-Bold"),
+    url("types/Aeonik/Aeonik-Bold.otf");
+}
+@font-face {
+    font-family: "Aeonik-Light";
+    src: local("Aeonik-Light"),
+    url("types/Aeonik/Aeonik-Light.otf");
+}
+@font-face {
+    font-family: "Aeonik-Medium";
+    src: local("Aeonik-Medium"),
+    url("types/Aeonik/Aeonik-Medium.otf");
+}
+@font-face {
+    font-family: "Aeonik-Regular";
+    src: local("Aeonik-Regular"),
+    url("types/Aeonik/Aeonik-Regular.otf");
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+img {
+    width: 100%;
+}
+@media only screen and (min-width : 320px) {
+    body {
+        /*background-color: lightcoral;*/
+    }
+    header {
+        height: 97px;
+        width: 100%;
+        background-color: lightcoral;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 44px;
+    }
+    .iniciales {
+        font-size: 22px;
+        font-family: "Aeonik-Regular", sans-serif;
+    }
+    nav {
+        font-family: "Aeonik-Light", sans-serif;
+        font-size: 18px;
+        margin-top: 24px;
+    }
+}
+
+
+@media only screen and (min-width : 640px) {
+    body {
+        background-color: lightcyan;
+    }
+}
+
+@media only screen and (min-width : 1024px) {
+    body {
+        background-color: lightyellow;
+    }
+}
+
+@media only screen and (min-width : 1440px) {
+    body {
+        background-color: lightgray;
+    }
+}
