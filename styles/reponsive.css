@@ -1,0 +1,46 @@
+/*==========  Non-Mobile First Method  ==========*/
+
+
+header {
+    background-color: cyan;
+}
+
+@media only screen and (max-width : 1440px) {
+    header {
+        background-color: orange;
+    }
+}
+
+@media only screen and (max-width : 1024px) {
+    header {
+        background-color: lightgreen;
+    }
+    .iniciales {
+        font-size: 26px;
+    }
+    nav a {
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (max-width : 640px) {
+    header {
+        background-color: lightcoral;
+        height: 120px;
+    }
+    nav a {
+        font-size: 38px;
+        margin-top: 19px;
+    }
+    .iniciales {
+        font-size: 40px;
+        margin-top: 19px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    header {
+        background-color: red;
+    }
+}

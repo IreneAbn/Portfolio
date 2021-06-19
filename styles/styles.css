@@ -27,18 +27,18 @@ html {
 
 header {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   background-color: #fdfdfd;
   z-index: 2;
 }
 header div {
   font-family: "Aeonik-Medium", sans-serif;
   font-size: 18px;
-  width: 85vw;
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 24px;
   margin-bottom: 22px;
 }
