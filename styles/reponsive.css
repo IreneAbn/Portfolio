@@ -2,18 +2,18 @@
 
 
 header {
-    background-color: cyan;
+    /*background-color: cyan;*/
 }
 
 @media only screen and (max-width : 1440px) {
     header {
-        background-color: orange;
+        /*background-color: orange;*/
     }
 }
 
 @media only screen and (max-width : 1024px) {
     header {
-        background-color: lightgreen;
+        /*background-color: lightgreen;*/
     }
     .iniciales {
         font-size: 26px;
@@ -26,8 +26,8 @@ header {
 
 @media only screen and (max-width : 640px) {
     header {
-        background-color: lightcoral;
-        height: 120px;
+        /*background-color: lightcoral;*/
+        height: 140px;
     }
     nav a {
         font-size: 38px;
@@ -41,6 +41,6 @@ header {
 
 @media only screen and (max-width : 320px) {
     header {
-        background-color: red;
+        /*background-color: red;*/
     }
 }
