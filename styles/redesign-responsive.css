@@ -155,7 +155,7 @@ img {
         font-family: "Aeonik-Light", sans-serif;
         font-size: 16px;
         padding: 0 10%;
-
+        line-height: 140%;
     }
     .social-links {
         display: flex;
