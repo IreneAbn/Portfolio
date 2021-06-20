@@ -67,7 +67,7 @@ img {
     h1 {
         font-size: 36px;
         text-align: center;
-        margin-top: 64px;
+        margin-top: 40px;
         font-family: "Aeonik-Bold", sans-serif;
         margin-bottom: 40px;
     }
@@ -280,6 +280,9 @@ img {
 }
 
 @media only screen and (min-width : 1024px) {
+    nav a {
+        font-size: 18px;
+    }
     h1 {
         font-size: 64px;
         margin-top: 104px;
@@ -357,5 +360,210 @@ img {
     header {
         /*background-color: lightsalmon;*/
 
+    }
+}
+
+
+
+/* ABOUT */
+
+@media only screen and (min-width : 320px) {
+    .selected{
+        border-bottom: 1px solid;
+        height: 18px;
+    }
+    .me-image img {
+        max-width: 280px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 32px
+    }
+    .me-text {
+        padding: 16px 16px 24px 16px;
+    }
+    .me-text h1 {
+        font-family: "Aeonik-Bold", sans-serif;
+        font-size: 25px;
+    }
+    .me-text p {
+        font-family: "Aeonik-Light", sans-serif;
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 16px;
+    }
+    .education {
+        padding-top: 42px;
+    }
+    .education h2 {
+        padding-bottom: 24px;
+        font-family: "Aeonik-Regular", sans-serif;
+        font-size: 32px;
+    }
+    .education-item {
+        padding-bottom: 24px;
+    }
+    .education-item h3 {
+        font-family: "Aeonik-Medium", sans-serif;
+        font-size: 18px;
+    }
+    .education-item .subheader {
+        font-family: "Aeonik-Regular", sans-serif;
+        font-size: 16px;
+        padding: 4px 0;
+    }
+    .education-item p {
+        font-family: "Aeonik-Light", sans-serif;
+        font-size: 14px;
+    }
+    .education ul {
+        list-style-type: disc;
+        padding-left: 16px;
+    }
+
+    .skills h2 {
+        padding-top: 32px;
+        padding-bottom: 24px;
+        font-family: "Aeonik-Regular", sans-serif;
+        font-size: 32px;
+    }
+    .skills ul li {
+        font-family: "Aeonik-Regular", sans-serif;
+        font-size: 16px;
+        padding: 2px 0;
+        margin: 0 8px;
+
+    }
+    .skills ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .tools-section {
+        background-color: #fafafa;
+        padding-bottom: 36px;
+        padding: 0 16px 36px 16px;
+    }
+
+    .bio-section {
+        background-color: #fafafa;
+        padding: 0 16px;
+    }
+
+    .tools-section h2 {
+        padding-top: 32px;
+        padding-bottom: 24px;
+        font-family: "Aeonik-Regular", sans-serif;
+        font-size: 32px;
+    }
+    .tools-section .skill-set {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .tools-section .skill-set span {
+        font-family: "Aeonik-Regular", sans-serif;
+        font-size: 16px;
+        margin: 0 8px;
+        padding: 2px 0;
+    }
+}
+
+@media only screen and (min-width : 640px) {
+    .bio-section {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+    .bio-section .education {
+        /*width: 50%;*/
+    }
+    .bio-section .skills {
+        /*width: 50%;*/
+    }
+    .bio-section .skills ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .bio-section .skills ul li {
+        margin-bottom: 8px;
+    }
+
+    .tools-section {
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (min-width : 1024px) {
+    .about-me {
+        padding: 64px 104px 64px 104px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .me-text {
+        width: 45vw;
+        padding: 0 0 0 64px;
+    }
+    .me-text h1 {
+        margin: 0 0 32px 0;
+        text-align: left;
+        font-size: 34px;
+    }
+    .me-text p {
+        font-size: 18px;
+    }
+    .me-image {
+        display: flex;
+    }
+    .me-image img {
+        height: fit-content;
+        margin-top: 0;
+        max-width: 400px;
+    }
+    .tools-section .skill-set {
+        justify-content: center;
+        max-width: 700px;
+    }
+    .tools-section .skill-set span {
+        font-size: 22px;
+    }
+    .education h2 {
+        font-size: 40px;
+    }
+    .education-item h3 {
+        font-size: 24px;
+    }
+    .education-item .subheader {
+        font-size: 22px;
+    }
+    .education-item p {
+        font-size: 16px;
+    }
+    #selflearn {
+        font-family: "Aeonik-Light", sans-serif;
+        font-size: 18px;
+    }
+    .skills h2 {
+        font-size: 40px;
+    }
+    .skills ul li {
+        font-size: 22px;
+    }
+
+    .tools-section h2 {
+        font-size: 40px;
+    }
+    .skill-set span {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width : 1440px) {
+    .about-me {
+        padding: 0 144px;
     }
 }
