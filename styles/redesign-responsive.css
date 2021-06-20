@@ -18,6 +18,11 @@
     src: local("Aeonik-Regular"),
     url("types/Aeonik/Aeonik-Regular.otf");
 }
+@font-face {
+    font-family: "Aeonik-Thin";
+    src: local("Aeonik-Thin"),
+    url("types/Aeonik/Aeonik-Thin.otf");
+}
 
 
 /*==========  Mobile First Method  ==========*/
@@ -29,10 +34,11 @@ img {
     header {
         height: 97px;
         width: 100%;
-        background-color: lightcoral;
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-bottom: 1px solid lightgray;
+        background-color: #fdfdfd;
     }
     header a {
         margin-top: 16px;
@@ -40,17 +46,140 @@ img {
     .iniciales {
         font-size: 22px;
         font-family: "Aeonik-Regular", sans-serif;
+        text-decoration: none;
+        cursor: pointer;
+        color: inherit;
     }
     nav {
-        font-family: "Aeonik-Light", sans-serif;
-        font-size: 20px;
         margin-top: 8px;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
     }
     nav a {
-        /*margin: 0 24px;*/
+        /*font-family: "Aeonik-Light", sans-serif;*/
+        font-family: "Aeonik-Thin", sans-serif ;
+        font-size: 16px;
+        text-decoration: none;
+        cursor: pointer;
+        color: inherit;
+    }
+    h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 64px;
+        font-family: "Aeonik-Bold", sans-serif;
+        margin-bottom: 40px;
+    }
+
+    #introduccion {
+        margin: 0 16px;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    #subtitulo {
+        font-size: 16px;
+        font-family: "Aeonik-Light", sans-serif;
+        line-height: 130%;
+    }
+    #second-phrase {
+        padding-top: 16px;
+    }
+    .verticaltext-topleft {
+        display: none;
+    }
+    .card {
+        padding-top: 32px;
+    }
+
+
+    .cardleft-text {
+        padding: 0 16px;
+
+    }
+    .titlecard {
+        padding-top: 24px;
+        font-size: 32px;
+        font-family: "Aeonik-Regular", sans-serif;
+        margin-bottom: 16px;
+    }
+    .pcard {
+        font-size: 16px;
+        font-family: "Aeonik-Light", sans-serif;
+        line-height: 160%;
+        /*margin-bottom: 16px;*/
+    }
+    .linkcard {
+        display: flex;
+        font-family: "Aeonik-Medium", sans-serif;
+        font-size: 14px;
+        padding-top: 36px;
+        text-decoration: none;
+        color: #050505;
+        height: 40px;
+        width: 145px;
+        border-bottom: solid white 2px;
+    }
+    .linkcard:hover{
+        border-bottom: solid 2px;
+    }
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .verticaltext-topright {
+        display: none;
+    }
+    .cardright-text {
+        padding: 0 16px;
+    }
+    .arrow {
+        width: 0;
+        height: 0;
+        border: 7px solid transparent;
+        border-top: 7px solid;
+        border-right: 7px solid;
+        margin-left: 15px;
+        transform: rotate(45deg);
+    }
+    footer {
+        padding: 40px 16px 40px 16px
+    }
+    footer h2 {
+        font-family: "Aeonik-Medium", sans-serif;
+        font-size: 22px;
+        padding-bottom:8px;
+    }
+
+    footer p {
+        font-family: "Aeonik-Light", sans-serif;
+        font-size: 16px;
+        padding: 0 10%;
+
+    }
+    .social-links {
+        display: flex;
+        padding-top: 32px;
+        justify-content: space-around;
+    }
+    .lets-connect {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .icon-text {
+        display: none;
+    }
+    .icon-mail {
+        width: 40px;
+    }
+    .icon-linkedin {
+        width: 38px;
+    }
+    .icon-medium {
+        width: 40px;
+    }
+    .icon-dribble {
+        width: 34px;
     }
 }
 
@@ -61,7 +190,8 @@ img {
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        background-color: lightcyan;
+        /*background-color: lightcyan;*/
+        border-bottom: 1px solid transparent;
     }
     .iniciales {
         margin-top: 0;
@@ -76,11 +206,89 @@ img {
     nav a {
         margin-top: 0;
     }
+    h1 {
+        font-size: 56px;
+    }
+    #subtitulo {
+        font-size: 18px;
+    }
+    .card {
+        padding: 104px 40px 0 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cardleft-image img {
+        max-width: 75vw;
+    }
+    .cardleft-text {
+        max-width: 25vw;
+    }
+    .cardleft-text {
+        padding: 0 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .reverse {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .cardright-text {
+        max-width: 35vw;
+    }
+    .cardright-image img {
+        max-width: 65vw;
+    }
+    .icon-text {
+        display: block;
+    }
+    .social-links a {
+        font-family: "Aeonik-Regular", sans-serif;
+        font-size: 14px;
+        color: #050505;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .icon-mail {
+        width: 48px;
+    }
+    .icon-linkedin {
+        width: 46px;
+    }
+    .icon-medium {
+        width: 48px;
+    }
+    .icon-dribble {
+        width: 42px;
+    }
+
+    footer {
+        padding: 104px 16px 40px 16px
+    }
+
+    .social-links {
+        padding-top: 48px;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
 }
 
 @media only screen and (min-width : 1024px) {
+    h1 {
+        font-size: 64px;
+        margin-top: 104px;
+    }
+    #subtitulo {
+        font-size: 22px;
+    }
     header {
-        background-color: lightyellow;
+        /*background-color: lightyellow;*/
         max-width: 1280px;
         position: fixed;
         z-index: 2;
@@ -99,12 +307,55 @@ img {
     nav {
         width: 40%;
     }
+    .cardright-text {
+        padding: 0 40px 0 16px;
+    }
+    .cardleft-text {
+        padding:  0 16px 0 40px;
+    }
 
+    .card {
+        padding: 104px 104px 0 104px;
+    }
+
+    .titlecard {
+        font-size: 44px;
+    }
+    .pcard {
+        font-size: 20px;
+    }
+    .linkcard {
+        font-size: 16px;
+    }
+
+    .cardleft-image {
+        display: flex;
+    }
+    .cardright-image {
+        display: flex;
+    }
+    .verticaltext-topleft {
+        display: block;
+        font-family: "Aeonik-Regular", sans-serif;
+        font-size: 18px;
+        writing-mode: vertical-lr;
+        padding-right: 20px;
+    }
+    .verticaltext-topright {
+        display: block;
+        font-family: "Aeonik-Regular", sans-serif;
+        font-size: 18px;
+        writing-mode: vertical-lr;
+        padding-left: 20px;
+    }
 }
 
 @media only screen and (min-width : 1440px) {
+    .card {
+        padding: 144px 144px 0 144px;
+    }
     header {
-        background-color: lightsalmon;
+        /*background-color: lightsalmon;*/
 
     }
 }
