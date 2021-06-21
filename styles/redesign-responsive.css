@@ -18,18 +18,11 @@
     src: local("Aeonik-Regular"),
     url("types/Aeonik/Aeonik-Regular.otf");
 }
-@font-face {
-    font-family: "Aeonik-Thin";
-    src: local("Aeonik-Thin"),
-    url("types/Aeonik/Aeonik-Thin.otf");
-}
 
 
 /*==========  Mobile First Method  ==========*/
 
-img {
-    width: 100%;
-}
+
 @media only screen and (min-width : 320px) {
     header {
         height: 97px;
@@ -38,7 +31,7 @@ img {
         flex-direction: column;
         align-items: center;
         border-bottom: 1px solid lightgray;
-        background-color: #fdfdfd;
+        background-color: white;
     }
     header a {
         margin-top: 16px;
@@ -57,7 +50,6 @@ img {
         justify-content: space-evenly;
     }
     nav a {
-        /*font-family: "Aeonik-Light", sans-serif;*/
         font-family: "Aeonik-Light", sans-serif ;
         font-size: 16px;
         text-decoration: none;
@@ -82,6 +74,9 @@ img {
         font-family: "Aeonik-Light", sans-serif;
         line-height: 130%;
     }
+    #subtitulo-bold {
+        font-family: "Aeonik-medium", sans-serif;
+      }
     #second-phrase {
         padding-top: 16px;
     }
@@ -92,7 +87,9 @@ img {
         padding-top: 32px;
     }
 
-
+    img {
+    width: 100%;
+    }
     .cardleft-text {
         padding: 0 16px;
 
@@ -184,6 +181,8 @@ img {
 }
 
 
+/* ----------------TABLET VERTICAL 640px--------------- */
+
 @media only screen and (min-width : 640px) {
     header {
         height: 85px;
@@ -200,11 +199,11 @@ img {
     }
     nav {
         margin-top: 0;
-        justify-content: space-evenly;
+        justify-content: flex-end;
         width: 60%;
     }
     nav a {
-        margin-top: 0;
+        margin: 0 25px 0 25px
     }
     h1 {
         font-size: 56px;
@@ -276,8 +275,10 @@ img {
         max-width: 750px;
         margin: 0 auto;
     }
-
 }
+
+
+/* ----------------TABLET HORIZONTAL 1024px--------------- */
 
 @media only screen and (min-width : 1024px) {
     nav a {
@@ -292,7 +293,7 @@ img {
     }
     header {
         /*background-color: lightyellow;*/
-        max-width: 1280px;
+        max-width: 1440px;
         position: fixed;
         z-index: 2;
         left: 50%;
@@ -301,20 +302,19 @@ img {
     main {
         margin: 0 auto;
         max-width: 1280px;
-        padding: 85px 0;
+        padding: 45px 0;
     }
 
     .iniciales {
         margin-left: 0;
     }
     nav {
-        width: 40%;
+        width: 60%;
+        margin-right: 0;
+        justify-content:flex-end
     }
-    .cardright-text {
-        padding: 0 40px 0 16px;
-    }
-    .cardleft-text {
-        padding:  0 16px 0 40px;
+    nav a {
+        margin: 0 25px 0 25px
     }
 
     .card {
@@ -331,41 +331,64 @@ img {
         font-size: 16px;
     }
 
+    .cardleft-text {
+        padding:  0 0 0 48px;
+    }
+    .cardright-text {
+        padding: 0 20px 0 30px;
+    }
     .cardleft-image {
         display: flex;
+        justify-content: space-between;
+        padding-right: 48px;
     }
     .cardright-image {
         display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
     }
+
     .verticaltext-topleft {
         display: block;
         font-family: "Aeonik-Regular", sans-serif;
         font-size: 18px;
         writing-mode: vertical-lr;
-        padding-right: 20px;
+        padding-right: 16px;
     }
     .verticaltext-topright {
         display: block;
         font-family: "Aeonik-Regular", sans-serif;
         font-size: 18px;
         writing-mode: vertical-lr;
-        padding-left: 20px;
+        padding-left: 16px;
+    }
+
+    .footer h2{
+        font-size: 32px;
+    }
+    footer p{
+        font-size: 22px;
+    }
+    .lets-connect{
+        padding-bottom: 40px;
     }
 }
+
+
+/* ----------------DESKTOP 1440px--------------- */
+
 
 @media only screen and (min-width : 1440px) {
     .card {
         padding: 144px 144px 0 144px;
     }
-    header {
-        /*background-color: lightsalmon;*/
-
-    }
+    
 }
 
 
 
-/* ABOUT */
+/* ------------------ABOUT HTML----------------- */
+
 
 @media only screen and (min-width : 320px) {
     .selected{
@@ -373,9 +396,9 @@ img {
         height: 18px;
     }
     .me-image img {
-        max-width: 280px;
+        max-width: 340px;
         margin: 0 auto;
-        display: block;
+        display: flex;
         margin-top: 32px
     }
     .me-text {
@@ -391,8 +414,11 @@ img {
         line-height: 150%;
         margin-bottom: 16px;
     }
+    .verticaltext-topleft {
+        display: none;
+    }
     .education {
-        padding-top: 42px;
+        padding-top: 40px;
     }
     .education h2 {
         padding-bottom: 24px;
@@ -419,6 +445,10 @@ img {
         list-style-type: disc;
         padding-left: 16px;
     }
+    #selflearn {
+        font-family: "Aeonik-Light", sans-serif;
+        font-size: 14px;
+    }
 
     .skills h2 {
         padding-top: 32px;
@@ -429,7 +459,7 @@ img {
     .skills ul li {
         font-family: "Aeonik-Regular", sans-serif;
         font-size: 16px;
-        padding: 2px 0;
+        padding: 4px 0;
         margin: 0 8px;
 
     }
@@ -440,8 +470,7 @@ img {
     }
     .tools-section {
         background-color: #fafafa;
-        padding-bottom: 36px;
-        padding: 0 16px 36px 16px;
+        padding: 0 16px 40px 16px;
     }
 
     .bio-section {
@@ -465,22 +494,29 @@ img {
         font-family: "Aeonik-Regular", sans-serif;
         font-size: 16px;
         margin: 0 8px;
-        padding: 2px 0;
+        padding: 4px 0;
     }
 }
 
+
+/* ----------------TABLET VERTICAL 640px--------------- */
+
 @media only screen and (min-width : 640px) {
+    
+    .me-text {
+        padding: 16px 40px 24px 40px;
+    }
+    .me-image img {
+        max-width: 340px;
+        margin: 0 auto;
+        margin-top: 32px
+    }
     .bio-section {
         display: flex;
         justify-content: space-around;
         align-content: center;
     }
-    .bio-section .education {
-        /*width: 50%;*/
-    }
-    .bio-section .skills {
-        /*width: 50%;*/
-    }
+
     .bio-section .skills ul {
         display: flex;
         flex-wrap: wrap;
@@ -493,20 +529,27 @@ img {
 
     .tools-section {
         text-align: center;
+        padding: 0 40px 40px 40px;
     }
 
+    .tools-section .skill-set {
+        justify-content: center;
+        max-width: 640px;
+    }
+   
 
 }
+
+
+/* ----------------TABLET HORIZONTAL 1024px--------------- */
 
 @media only screen and (min-width : 1024px) {
     .about-me {
         padding: 64px 104px 64px 104px;
         display: flex;
-        justify-content: space-between;
     }
     .me-text {
-        width: 45vw;
-        padding: 0 0 0 64px;
+        padding: 0 0 0 40px;
     }
     .me-text h1 {
         margin: 0 0 32px 0;
@@ -518,15 +561,24 @@ img {
     }
     .me-image {
         display: flex;
+        padding-right: 40px;
     }
     .me-image img {
-        height: fit-content;
-        margin-top: 0;
+        margin: 0;
+        max-height: 430px;
         max-width: 400px;
+        width: 35vw;
+    }
+
+    .verticaltext-topleft {
+        display: block;
+        font-family: "Aeonik-Regular", sans-serif;
+        font-size: 18px;
+        writing-mode: vertical-lr;
+        padding-right: 16px;
     }
     .tools-section .skill-set {
-        justify-content: center;
-        max-width: 700px;
+        max-width: 900px;
     }
     .tools-section .skill-set span {
         font-size: 22px;
@@ -562,8 +614,18 @@ img {
     }
 }
 
+
+/* ----------------DESKTOP 1440px--------------- */
+
 @media only screen and (min-width : 1440px) {
     .about-me {
-        padding: 0 144px;
+        padding: 64px 144px 64px 144px;
     }
+    .me-image img {
+        margin: 0;
+        max-height: 500px;
+        max-width: 470px;
+        width: 50vw;
+    }
+    
 }
