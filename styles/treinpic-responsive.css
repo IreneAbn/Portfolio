@@ -18,13 +18,16 @@
 /*==========  Mobile First Method  ==========*/
 
 @media only screen and (min-width: 320px) {
+  html {
+    scroll-behavior: smooth;
+  }
   header {
     height: 97px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid white;
     background-color: white;
   }
   header a {
@@ -64,7 +67,7 @@
   }
 
   .project-image {
-    padding-bottom: 24px;
+    padding-bottom: 32px;
   }
   .section {
     padding-bottom: 32px;
@@ -73,7 +76,7 @@
     font-family: "Aeonik-Light", sans-serif;
     font-size: 20px;
     padding: 0 16px 0 16px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     line-height: 110%;
   }
   .project-info-text {
@@ -122,81 +125,80 @@
     align-self: center;
   }
 
-  .section-ux {
+  /* .section-ux {
     padding: 0 16px 0 16px;
-  }
-  #background-sitemap{
+  } */
+  #background-sitemap {
     background-color: white;
     padding: 16px 16px 16px 16px;
   }
   .section-ux-text {
-    padding: 32px 16px 32px 16px;
+    padding: 32px 0px 32px 0px;
   }
-  #background-userflow{
-    background-color: #F0F4F7;
+  #background-userflow {
+    background-color: #f0f4f7;
     padding: 16px 16px 16px 16px;
   }
   .section-ux2 {
-    padding: 32px 16px 32px 16px;
+    padding: 32px 0px 32px 0px;
   }
-  #background-highfi{
+  #background-highfi {
     background-color: white;
     padding: 16px 0 16px 0;
   }
-  #background-photos{
+  #background-photos {
     background-color: white;
   }
-  #background-route{
+  #background-route {
     background-color: white;
   }
-  #route{
+  #route {
     margin: 0 auto;
     max-width: 300px;
     display: flex;
   }
 
-  #background-gif1{
-      background-color: white;
-      padding: 32px 0 32px 0;
+  #background-gif1 {
+    background-color: white;
+    padding: 32px 0 32px 0;
   }
-  #gif1{
+  #gif1 {
     margin: 0 auto;
-    max-width: 200px;
+    max-width: 300px;
     display: flex;
-}
+  }
 
   hr {
     margin-top: 120px;
     margin-bottom: 40px;
   }
-  .other-projects-text{
+  .other-projects-text {
     font-family: "Aeonik-Light", sans-serif;
     font-size: 22px;
     padding-bottom: 60px;
     text-align: center;
     margin: 0 auto;
   }
-  .other-projects{
+  .other-projects {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: 0px 24px 0px 16px;
   }
-  #foto-footer1{
+  #foto-footer1 {
     padding-right: 10px;
-    transition: transform .2s;
+    transition: transform 0.2s;
   }
-  #foto-footer1:hover{
+  #foto-footer1:hover {
     transform: scale(1.02);
   }
-  #foto-footer2{
+  #foto-footer2 {
     padding-left: 10px;
-    transition: transform .2s;
+    transition: transform 0.2s;
   }
-  #foto-footer2:hover{
+  #foto-footer2:hover {
     transform: scale(1.02);
   }
-
 
   footer {
     padding: 110px 16px 140px 16px;
@@ -246,7 +248,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: lightcyan;
+    /* background-color: lightcyan; */
     border-bottom: 1px solid transparent;
   }
   .iniciales {
@@ -276,33 +278,32 @@
     padding: 0 40px 0 40px;
   }
 
-  #route{
+  #route {
     margin: 0 auto;
     max-width: 400px;
     display: flex;
   }
 
-  #gif1{
+  #gif1 {
     margin: 0 auto;
     max-width: 250px;
     display: flex;
-}
+  }
 
   hr {
     margin-top: 160px;
     margin-bottom: 60px;
     width: 85%;
   }
-  .other-projects{
+  .other-projects {
     padding: 0px 40px 0px 32px;
   }
-  #foto-footer1{
+  #foto-footer1 {
     padding-right: 10px;
   }
-  #foto-footer2{
+  #foto-footer2 {
     padding-left: 10px;
   }
-
 
   .icon-text {
     display: block;
@@ -347,7 +348,7 @@
     font-size: 18px;
   }
   header {
-    background-color: lightyellow;
+    /* background-color: lightyellow; */
     max-width: 1440px;
     position: fixed;
     z-index: 2;
@@ -433,60 +434,66 @@
 
   .section-ux {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     padding-bottom: 60px;
   }
-  #background-sitemap{
+  #background-sitemap {
     background-color: white;
     padding: 24px 24px 24px 24px;
   }
-  #background-userflow{
-    background-color: #F0F4F7;
+  #background-userflow {
+    background-color: #f0f4f7;
     padding: 24px 24px 24px 24px;
   }
   .section-ux2 {
     display: flex;
-  justify-content:space-between;
-  padding-bottom: 60px;
-  padding-top: 120px;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    padding-top: 120px;
   }
-  #background-highfi{
+  .section-ux-text {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    padding-top: 120px;
+  }
+  
+  #background-highfi {
     background-color: white;
     padding: 16px 0 16px 0;
   }
-  #background-photos{
+  #background-photos {
     background-color: white;
   }
-  #background-route{
+  #background-route {
     background-color: white;
   }
-  #route{
+  #route {
     margin: 0 auto;
     max-width: 500px;
     display: flex;
   }
 
-  #gif1{
+  #gif1 {
     margin: 0 auto;
     max-width: 300px;
     display: flex;
-}
+  }
 
   hr {
     margin-top: 160px;
     margin-bottom: 60px;
     width: 85%;
   }
-  .other-projects{
+  .other-projects {
     padding: 0px 80px 0px 72px;
   }
-  #foto-footer1{
+  #foto-footer1 {
     padding-right: 20px;
   }
-  #foto-footer2{
+  #foto-footer2 {
     padding-left: 20px;
   }
-
 
   .footer h2 {
     font-size: 32px;
@@ -502,9 +509,9 @@
 /* ----------------DESKTOP 1440px--------------- */
 
 @media only screen and (min-width: 1440px) {
-    header {
+  /* header {
         background-color:thistle;
-      }
+      } */
   .project-intro {
     padding: 0 144px 0 144px;
   }
@@ -522,13 +529,13 @@
     margin-bottom: 60px;
     width: 85%;
   }
-  .other-projects{
+  .other-projects {
     padding: 0px 144px 0px 136px;
   }
-  #foto-footer1{
+  #foto-footer1 {
     padding-right: 20px;
   }
-  #foto-footer2{
+  #foto-footer2 {
     padding-left: 20px;
   }
 }
