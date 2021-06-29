@@ -125,22 +125,27 @@
     align-self: center;
   }
 
-  /* .section-ux {
-    padding: 0 16px 0 16px;
-  } */
+  #background-affinity {
+    background-color: white;
+    padding: 16px 16px 16px 16px;
+  }
   #background-sitemap {
     background-color: white;
     padding: 16px 16px 16px 16px;
   }
   .section-ux-text {
-    padding: 32px 0px 32px 0px;
+    padding: 24px 0px 24px 0px;
   }
   #background-userflow {
     background-color: #f0f4f7;
     padding: 16px 16px 16px 16px;
   }
   .section-ux2 {
-    padding: 32px 0px 32px 0px;
+    padding: 24px 0px 24px 0px;
+  }
+  #background-midfi {
+    background-color: white;
+    padding: 24px 0 24px 0;
   }
   #background-highfi {
     background-color: white;
@@ -437,6 +442,10 @@
     justify-content: space-between;
     padding-bottom: 60px;
   }
+  #background-affinity {
+    background-color: white;
+    padding: 24px 24px 24px 24px;
+  }
   #background-sitemap {
     background-color: white;
     padding: 24px 24px 24px 24px;
@@ -449,15 +458,18 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 60px;
-    padding-top: 120px;
+    padding-top: 80px;
   }
   .section-ux-text {
     display: flex;
     justify-content: space-between;
     padding-bottom: 60px;
-    padding-top: 120px;
+    padding-top: 80px;
   }
-  
+  #background-midfi {
+    background-color: white;
+    padding: 24px 0 24px 0;
+  }
   #background-highfi {
     background-color: white;
     padding: 16px 0 16px 0;
