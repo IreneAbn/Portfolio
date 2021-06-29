@@ -125,6 +125,10 @@
     align-self: center;
   }
 
+  #background-journey {
+    background-color: white;
+    padding: 16px 16px 16px 16px;
+  }
   #background-sitemap {
     background-color: white;
     padding: 16px 16px 16px 16px;
@@ -141,7 +145,7 @@
   }
   #background-highfi {
     background-color: white;
-    padding: 16px 0 16px 0;
+    padding: 16px 16px 16px 8px;
   }
   #background-home {
     background-color: white;
@@ -434,6 +438,10 @@
     justify-content: space-between;
     padding-bottom: 60px;
   }
+  #background-journey {
+    background-color: white;
+    padding: 24px 24px 24px 24px;
+  }
   #background-sitemap {
     padding: 24px 24px 24px 24px;
   }
@@ -444,18 +452,18 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 60px;
-    padding-top: 120px;
+    padding-top: 80px;
   }
   .section-ux-text {
     display: flex;
     justify-content: space-between;
     padding-bottom: 60px;
-    padding-top: 120px;
+    padding-top: 80px;
   }
 
   #background-highfi {
     background-color: white;
-    padding: 16px 0 16px 0;
+    padding: 16px 24px 16px 16px;
   }
 
   #home {
